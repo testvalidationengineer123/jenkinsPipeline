@@ -13,7 +13,7 @@ pipeline{
 				}
 			}
 		}
-		stage ('Compile Stage') {
+		stage ('Test Stage') {
 		
 			steps {
 			
