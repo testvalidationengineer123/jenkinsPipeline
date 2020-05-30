@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.lahad.runners.Runner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.871 sec - in com.lahad.runners.Runner
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.414 sec - in com.lahad.runners.Runner

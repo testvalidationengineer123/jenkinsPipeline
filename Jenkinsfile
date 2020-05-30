@@ -9,7 +9,7 @@ pipeline{
 			steps {
 			
 				withMaven(maven: 'maven_3_6_3') {
-					sh 'mvn clean install -DnavigateurUtilise=chrome'
+					sh 'mvn clean install'
 				}
 			}
 		}

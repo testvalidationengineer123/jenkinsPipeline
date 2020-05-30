@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.lahad.runners.Runner" time="29.871" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.lahad.runners.Runner" time="27.414" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -32,14 +32,14 @@
     <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 58 Stepping 9, GenuineIntel"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="LOCALAPPDATA" value="C:\Users\lahad\AppData\Local"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/test1/2/display/redirect?page=changes"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/test1/3/display/redirect?page=changes"/>
     <property name="user.timezone" value="Europe/Paris"/>
     <property name="user.script" value=""/>
     <property name="path.separator" value=";"/>
     <property name="NUMBER_OF_PROCESSORS" value="4"/>
-    <property name="BUILD_TAG" value="jenkins-test1-2"/>
+    <property name="BUILD_TAG" value="jenkins-test1-3"/>
     <property name="file.encoding" value="Cp1252"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Program Files\apache-maven-3.6.3 C:\Users\lahad\.jenkins\war\WEB-INF\lib\remoting-3.36.1.jar C:\Users\lahad\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\Users\lahad\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 55994"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Program Files\apache-maven-3.6.3 C:\Users\lahad\.jenkins\war\WEB-INF\lib\remoting-3.36.1.jar C:\Users\lahad\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\Users\lahad\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 56127"/>
     <property name="HUDSON_URL" value="http://localhost:8080/"/>
     <property name="JENKINS_SERVER_COOKIE" value="c58df3814ae163b8"/>
     <property name="EXECUTOR_NUMBER" value="0"/>
@@ -48,7 +48,7 @@
     <property name="APPDATA" value="C:\Users\lahad\AppData\Roaming"/>
     <property name="user.language" value="en"/>
     <property name="line.separator" value="&#10;"/>
-    <property name="BUILD_URL" value="http://localhost:8080/job/test1/2/"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/test1/3/"/>
     <property name="DOCKER_CERT_PATH" value="C:\Users\lahad\.docker\machine\machines\default"/>
     <property name="M2_HOME" value="C:\Program Files\apache-maven-3.6.3"/>
     <property name="=C:" value="C:\Program Files\jenkins"/>
@@ -56,7 +56,7 @@
     <property name="DriverData" value="C:\Windows\System32\Drivers\DriverData"/>
     <property name="sun.desktop" value="windows"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="BUILD_DISPLAY_NAME" value="#2"/>
+    <property name="BUILD_DISPLAY_NAME" value="#3"/>
     <property name="OS" value="Windows_NT"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="HUDSON_SERVER_COOKIE" value="c58df3814ae163b8"/>
@@ -70,7 +70,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="2"/>
+    <property name="BUILD_NUMBER" value="3"/>
     <property name="maven3.interceptor" value="C:\Users\lahad\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_241\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\apache-maven-3.6.3/bin;C:\Program Files\Java\jdk1.8.0_241/bin;C:\Program Files\Java\jdk1.8.0_241/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\lahad\Desktop\tools\android-sdk\platform-tools;C:\Users\lahad\AppData\Local\Microsoft\WindowsApps;C:\Users\lahad\AppData\Roaming\npm;C:\Program Files\Docker Toolbox;."/>
     <property name="HOMEDRIVE" value="C:"/>
@@ -79,11 +79,11 @@
     <property name="java.class.version" value="52.0"/>
     <property name="JOB_URL" value="http://localhost:8080/job/test1/"/>
     <property name="OneDrive" value="C:\Users\lahad\OneDrive"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/test1/2/display/redirect"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/test1/3/display/redirect"/>
     <property name="VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\"/>
     <property name="DOCKER_TLS_VERIFY" value="1"/>
     <property name="JENKINS_HOME" value="C:\Users\lahad\.jenkins"/>
-    <property name="BUILD_ID" value="2"/>
+    <property name="BUILD_ID" value="3"/>
     <property name="TEMP" value="C:\Users\lahad\AppData\Local\Temp"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -149,5 +149,5 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
   </properties>
-  <testcase name="Search Senegal on google" classname="Google Search" time="10.146"/>
+  <testcase name="Search Senegal on google" classname="Google Search" time="9.229"/>
 </testsuite>

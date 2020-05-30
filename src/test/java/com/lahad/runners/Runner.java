@@ -30,10 +30,10 @@ public class Runner {
 	@BeforeClass
 	public static void setUp() {
 		String navigateur = System.getProperty("navigateurTest");
-		if("chrome".equals(navigateur)) {		
+//		if("chrome".equals(navigateur)) {		
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\lahad\\Desktop\\tools\\webdrivers\\chromedriver_83.0.4103.39\\chromedriver.exe");
 			driver = new ChromeDriver();
-		}
+//		}
 	}
 	
 	@AfterClass
