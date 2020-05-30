@@ -1,0 +1,80 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-30T14:00:03.541Z",
+        "line": 3,
+        "name": "Search Senegal on google",
+        "description": "",
+        "id": "google-search;search-senegal-on-google",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2985000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on google search page",
+            "match": {
+              "location": "com.lahad.stepDefs.GoogleSearch.user_is_on_google_search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6025000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user types \"Sénégal\" and hit enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sénégal\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.lahad.stepDefs.GoogleSearch.user_types_and_hit_enter(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 407000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "results for Senegal must be displayed",
+            "match": {
+              "location": "com.lahad.stepDefs.GoogleSearch.results_for_Senegal_must_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GoogleSearch"
+          }
+        ]
+      }
+    ],
+    "name": "Google Search",
+    "description": "",
+    "id": "google-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/GoogleSearch.feature",
+    "tags": [
+      {
+        "name": "@GoogleSearch",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

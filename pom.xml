@@ -1,0 +1,107 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jenkinsPipeline</groupId>
+  <artifactId>jenkinsPipeline</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+  
+  	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-java</artifactId>
+	    <version>5.6.0</version>
+	    <scope>test</scope>
+	</dependency>
+
+
+	<dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-junit</artifactId>
+        <version>5.6.0</version>
+        <scope>test</scope>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/junit/junit -->
+	<dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.12</version>
+	    <scope>test</scope>
+	</dependency>
+    
+    
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	<dependency>
+	    <groupId>org.seleniumhq.selenium</groupId>
+	    <artifactId>selenium-java</artifactId>
+	    <version>3.141.59</version>
+	</dependency>
+    
+    
+     </dependencies>
+    
+    <build>
+        <plugins>
+        	<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<fork>true</fork>
+					<executable>C:\Program Files\Java\jdk1.8.0_241\bin\javac.exe</executable>
+				</configuration>
+			</plugin>
+        
+        
+        
+        <!-- Maven Sure Fire Plug In. It is used to select runner class from any
+                folder location as well as not stop to execution whenever any test fail -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.19.1</version>
+                <configuration>
+                    <includes>
+<!--  					  <include>com/lahad/runners/${environnementUtilise}.java</include>     -->
+					      <include>com/lahad/runners/Runner.java</include> 
+                    </includes>
+                    <printSummary>false</printSummary>
+                    <testFailureIgnore>true</testFailureIgnore>
+  <!--              <systemPropertyVariables>
+	 			     	<environnementTest>${environnementUtilise}</environnementTest>   
+						<navigateurTest>${navigateurUtilise}</navigateurTest>   	
+    
+                    </systemPropertyVariables>
+
+  -->                   
+                </configuration>
+            </plugin>
+            <!-- This is for Cucumber Custom Report plug in we specify the configuration
+                details under configuration tag. -->
+                
+            <plugin>
+                <groupId>net.masterthought</groupId>
+                <artifactId>maven-cucumber-reporting</artifactId>
+                <version>3.15.0</version>
+                <executions>
+                    <execution>
+                        <id>execution</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <projectName>CucumberReport</projectName>
+                            <outputDirectory>target/cucumber-reports/advanced-reports</outputDirectory>
+                            <cucumberOutput>target/cucumber-reports/CucumberTestReport.json</cucumberOutput>
+                            <parallelTesting>false</parallelTesting>
+                             <buildNumber>3</buildNumber> 
+                            <checkBuildResult>false</checkBuildResult>  
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            
+        </plugins>
+    </build>
+
+</project>
