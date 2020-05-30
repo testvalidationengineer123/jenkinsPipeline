@@ -66,13 +66,13 @@
                     </includes>
                     <printSummary>false</printSummary>
                     <testFailureIgnore>true</testFailureIgnore>
-  <!--              <systemPropertyVariables>
-	 			     	<environnementTest>${environnementUtilise}</environnementTest>   
+                <systemPropertyVariables>
+	 <!--  			     	<environnementTest>${environnementUtilise}</environnementTest>     -->
 						<navigateurTest>${navigateurUtilise}</navigateurTest>   	
     
                     </systemPropertyVariables>
 
-  -->                   
+                     
                 </configuration>
             </plugin>
             <!-- This is for Cucumber Custom Report plug in we specify the configuration
