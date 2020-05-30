@@ -10,6 +10,7 @@ pipeline{
 			
 				withMaven(maven: 'maven_3_6_3') {
 					sh 'mvn clean install -DnavigateurUtilise=chrome'
+				}
 			}
 		}
 		stage ('Compile Stage') {
@@ -18,6 +19,7 @@ pipeline{
 			
 				withMaven(maven: 'maven_3_6_3') {
 					sh 'mvn test'
+				}
 			}
 		}
 		stage ('Cucumber Reports') {
