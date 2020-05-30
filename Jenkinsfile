@@ -16,8 +16,8 @@ pipeline{
 			
 			steps {
 				cucumber buildStatus: "FAILED",
-						 fileIncludePattern: "**/CucumberTestReport.json",
-						 jsonReportDirectory: 'target/cucumber-reports'
+					fileIncludePattern: "**/CucumberTestReport.json",
+					jsonReportDirectory: 'target/cucumber-reports'
 			}
 		}
  	}
