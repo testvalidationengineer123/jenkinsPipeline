@@ -9,7 +9,15 @@ pipeline{
 			steps {
 			
 				withMaven(maven: 'maven_3_6_3') {
-					sh 'mvn clean install -DnavigateurUtilise=${navigateur}'
+					sh 'mvn clean install -DnavigateurUtilise=chrome'
+			}
+		}
+		stage ('Compile Stage') {
+		
+			steps {
+			
+				withMaven(maven: 'maven_3_6_3') {
+					sh 'mvn test'
 			}
 		}
 		stage ('Cucumber Reports') {
