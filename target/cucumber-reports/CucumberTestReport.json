@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-05-30T14:49:02.124Z",
+        "start_timestamp": "2020-05-31T08:14:45.219Z",
         "line": 3,
         "name": "Search Senegal on google",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2703000000,
+              "duration": 3468000000,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 4875000000,
+              "duration": 5167000000,
               "status": "passed"
             },
             "line": 5,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 494000000,
+              "duration": 533000000,
               "status": "passed"
             },
             "line": 6,

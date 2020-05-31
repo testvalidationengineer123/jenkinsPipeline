@@ -33,5 +33,7 @@ public class GoogleSearch {
 	public void results_for_Senegal_must_be_displayed() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Assert.assertTrue(driver.getPageSource().contains("Gouvernement du Sénégal"));
+		
+		Assert.assertTrue(false);
 	}
 }
