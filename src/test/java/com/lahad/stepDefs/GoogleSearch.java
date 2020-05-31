@@ -34,6 +34,6 @@ public class GoogleSearch {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Assert.assertTrue(driver.getPageSource().contains("Gouvernement du Sénégal"));
 		
-//		Assert.assertTrue(false);
+		Assert.assertTrue(false);
 	}
 }
