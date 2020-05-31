@@ -20,13 +20,13 @@ public class GoogleSearch {
 	@Given("user is on google search page")
 	public void user_is_on_google_search_page() {
 		driver.get("http://www.google.com");
-		Assert.assertTrue(false);
+Assert.assertTrue(false);
 	}
 
 	@When("user types {string} and hit enter")
-	public void user_types_and_hit_enter(String string) {
+	public void user_types_and_hit_enter(String country) {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.findElement(By.name("q")).sendKeys("Sénégal");
+		driver.findElement(By.name("q")).sendKeys(country);
 		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
 	}
 
@@ -35,5 +35,10 @@ public class GoogleSearch {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Assert.assertTrue(driver.getPageSource().contains("Gouvernement du Sénégal"));
 		
+	}
+	
+	@Then("results for France must be displayed")
+	public void results_for_France_must_be_displayed() {
+		System.out.println("Result for France //////////////////////////////");
 	}
 }

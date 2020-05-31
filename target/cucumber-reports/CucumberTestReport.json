@@ -3,8 +3,30 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-05-31T08:14:45.219Z",
-        "line": 3,
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.lahad.stepDefs.GoogleSearch.user_is_on_google_search_page(GoogleSearch.java:23)\r\n\tat ✽.user is on google search page(file:///C:/Users/lahad/eclipse-workspace/jenkinsPipeline/src/test/resources/Features/GoogleSearch.feature:5)\r\n",
+              "duration": 3115000000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user is on google search page",
+            "match": {
+              "location": "com.lahad.stepDefs.GoogleSearch.user_is_on_google_search_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T11:25:53.135Z",
+        "line": 8,
         "name": "Search Senegal on google",
         "description": "",
         "id": "google-search;search-senegal-on-google",
@@ -13,22 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3468000000,
-              "status": "passed"
+              "duration": 6000000,
+              "status": "skipped"
             },
-            "line": 4,
-            "name": "user is on google search page",
-            "match": {
-              "location": "com.lahad.stepDefs.GoogleSearch.user_is_on_google_search_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5167000000,
-              "status": "passed"
-            },
-            "line": 5,
+            "line": 9,
             "name": "user types \"Sénégal\" and hit enter",
             "match": {
               "arguments": [
@@ -43,14 +53,79 @@
           },
           {
             "result": {
-              "duration": 533000000,
-              "status": "passed"
+              "duration": 5000000,
+              "status": "skipped"
             },
-            "line": 6,
+            "line": 10,
             "name": "results for Senegal must be displayed",
             "match": {
               "location": "com.lahad.stepDefs.GoogleSearch.results_for_Senegal_must_be_displayed()"
             },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GoogleSearch"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.lahad.stepDefs.GoogleSearch.user_is_on_google_search_page(GoogleSearch.java:23)\r\n\tat ✽.user is on google search page(file:///C:/Users/lahad/eclipse-workspace/jenkinsPipeline/src/test/resources/Features/GoogleSearch.feature:5)\r\n",
+              "duration": 1521000000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user is on google search page",
+            "match": {
+              "location": "com.lahad.stepDefs.GoogleSearch.user_is_on_google_search_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T11:25:56.865Z",
+        "line": 12,
+        "name": "Search France on google",
+        "description": "",
+        "id": "google-search;search-france-on-google",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user types \"France\" and hit enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"France\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.lahad.stepDefs.GoogleSearch.user_types_and_hit_enter(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "results for France must be displayed",
+            "match": {},
             "keyword": "Then "
           }
         ],
