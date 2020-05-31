@@ -16,23 +16,22 @@ pipeline {
 	stages {	
 		stage("Build and Test") {	
 			steps {
-				script{
-					try {
+//				script{
+//					try {
 							bat "echo ********************This is the build stage********************"
 							bat "mvn clean install -DnavigateurUtilise=${params.NAVIGATEUR}"
-						}
-					catch(err) {
-						// handle the exception or not
-					}
-					finally {
-						cucumber jsonReportDirectory: "target/cucumber-reports", fileIncludePattern: "**/CucumberTestReport.json"
-					}
-				}	
+//						}
+//					catch(err) {
+//						cucumber jsonReportDirectory: "target/cucumber-reports", fileIncludePattern: "**/CucumberTestReport.json"
+//						throw err
+//					}
+//				}	
 			}
 		}
 	}	
 	post {
 		always {
+			bat "echo on fait les post actions///////////////////////////////////////////////"
 			cucumber jsonReportDirectory: "target/cucumber-reports", fileIncludePattern: "**/CucumberTestReport.json"
 		}
 
