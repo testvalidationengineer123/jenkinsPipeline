@@ -21,7 +21,7 @@ pipeline {
 		stage("Test") {
 			
 			steps {
-				bat @echo off'
+				bat '@echo off'
 				bat 'echo This is the test stage//////////////////////////////////////////////////////////////'
 			}
 		}
