@@ -16,22 +16,13 @@ pipeline {
 	stages {	
 		stage("Build and Test") {	
 			steps {
-//				script{
-//					try {
-							bat "echo ********************This is the build stage********************"
-							bat "mvn clean install -DnavigateurUtilise=${params.NAVIGATEUR}"
-//						}
-//					catch(err) {
-//						cucumber jsonReportDirectory: "target/cucumber-reports", fileIncludePattern: "**/CucumberTestReport.json"
-//						throw err
-//					}
-//				}	
+				bat "echo ********************This is the build stage********************"
+				bat "mvn clean install -DnavigateurUtilise=${params.NAVIGATEUR}"
 			}
 		}
 	}	
 	post {
 		always {
-			bat "echo on fait les post actions///////////////////////////////////////////////"
 			cucumber jsonReportDirectory: "target/cucumber-reports", fileIncludePattern: "**/CucumberTestReport.json"
 		}
 
@@ -44,7 +35,6 @@ pipeline {
 					subject: 'Unsuccessful build ',
 					to: 'testvalidationengineer123@gmail.com'
 				
-			}
-				
+		}	
 	}				
 }
