@@ -8,6 +8,15 @@ pipeline {
 		jdk '${env.JAVA_HOME}'
 	}	
 */
+	parameters {
+	
+		choice (
+			name: "NAVIGATEUR",
+			choices: ["chrome", "firefox"],
+			description: "Le navigateur sur lequel on veut lancer les tests"
+		)
+	
+	}
 	
 	stages {	
 	
@@ -15,7 +24,7 @@ pipeline {
 				
 			steps {
 				bat "echo This is the build stage//////////////////////////////////////////////////////////////"
-				bat "mvn clean install -DnavigateurUtilise=${params.navigateur}"
+				bat "mvn clean install -DnavigateurUtilise=${params.NAVIGATEUR}"
 			}
 		}
 
