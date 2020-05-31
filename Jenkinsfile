@@ -25,10 +25,10 @@ pipeline {
 				bat "echo ********************This is the report stage********************"
 			}
 			post {
-/*				always {
-					cucumber jsonReportDirectory: "target/cucumber-reports", fileIncludePattern: "**/CucumberTestReport.json"
-				}
-*/				always {
+//				always {
+//					cucumber jsonReportDirectory: "target/cucumber-reports", fileIncludePattern: "**/CucumberTestReport.json"
+//				}
+				always {
 				
 					emailext body: '''Hi team,
 									The latest tests build is unsucessful.
