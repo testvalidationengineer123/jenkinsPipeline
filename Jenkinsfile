@@ -5,14 +5,14 @@ pipeline {
 	tools {
 		maven: "Maven 3.6.3"
 		jdk "jdk8"
-	}
+	}	
 	
-	stages {
+	stages {	
 	
-		stage("Build") {
-			
+		stage("Build") {	
+				
 			steps {
-				bat 'echo Let'start//////////////////////////////////////////////////////////////'
+				bat 'echo Let start//////////////////////////////////////////////////////////////'
 			}
 		}
 		
