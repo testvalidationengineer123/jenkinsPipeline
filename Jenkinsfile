@@ -15,6 +15,7 @@ pipeline {
 				
 			steps {
 				bat "echo This is the build stage//////////////////////////////////////////////////////////////"
+				bat "mvn clean install"
 			}
 		}
 		
