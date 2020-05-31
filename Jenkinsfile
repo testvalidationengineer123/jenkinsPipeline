@@ -20,25 +20,22 @@ pipeline {
 				bat "mvn clean install -DnavigateurUtilise=${params.NAVIGATEUR}"
 			}
 		}
-		stage("Report") {
-			steps {
-				bat "echo ********************This is the report stage********************"
-			}
-			post {
-//				always {
-//					cucumber jsonReportDirectory: "target/cucumber-reports", fileIncludePattern: "**/CucumberTestReport.json"
-//				}
-				always {
+	}	
+	post {
+		always {
+			cucumber jsonReportDirectory: "target/cucumber-reports", fileIncludePattern: "**/CucumberTestReport.json"
+		}
+
+		unsuccessful {
 				
-					emailext body: '''Hi team,
-									The latest tests build is unsucessful.
-									There may be errors or failures.
-									Lahad.''',
-							 subject: 'Unsuccessful build ',
-							 to: 'testvalidationengineer123@gmail.com'
+			emailext body: '''Hi team,
+							The latest tests build is unsuccessful.
+							There may be errors or failures.
+							Lahad.''',
+					subject: 'Unsuccessful build ',
+					to: 'testvalidationengineer123@gmail.com'
 				
-				}
 			}
-		}				
-	}
+				
+	}				
 }
