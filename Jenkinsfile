@@ -2,11 +2,11 @@ pipeline {
 	
 	agent any
 
+/*	
 	tools {
 		maven '${env.MAVEN_HOME}'
 		jdk '${env.JAVA_HOME}'
 	}	
-/*	
 */
 	
 	stages {	
@@ -14,21 +14,21 @@ pipeline {
 		stage("Build") {	
 				
 			steps {
-				bat 'echo This is the build stage//////////////////////////////////////////////////////////////'
+				bat "echo This is the build stage//////////////////////////////////////////////////////////////"
 			}
 		}
 		
 		stage("Test") {
 			
 			steps {
-				bat 'echo This is the test stage//////////////////////////////////////////////////////////////'
+				bat "echo This is the test stage//////////////////////////////////////////////////////////////"
 			}
 		}
 		
 		stage("Cucumber Reports") {
 			
 			steps {
-				bat 'echo This is the report stage//////////////////////////////////////////////////////////////'
+				bat "echo This is the report stage//////////////////////////////////////////////////////////////"
 			}
 		}				
 	
