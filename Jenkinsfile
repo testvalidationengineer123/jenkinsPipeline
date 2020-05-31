@@ -2,11 +2,11 @@ pipeline {
 	
 	agent any
 
-/*	
 	tools {
-		maven "${env.MAVEN_HOME}"
-		jdk "${env.JAVA_HOME}"
+		maven '${env.MAVEN_HOME}'
+		jdk '${env.JAVA_HOME}'
 	}	
+/*	
 */
 	
 	stages {	
@@ -21,7 +21,6 @@ pipeline {
 		stage("Test") {
 			
 			steps {
-				bat '@echo off'
 				bat 'echo This is the test stage//////////////////////////////////////////////////////////////'
 			}
 		}
