@@ -30,8 +30,9 @@ pipeline {
 
 		
 		stage("Report") {
-			
-			bat "echo ********************This is the report stage********************"
+			steps {
+				bat "echo ********************This is the report stage********************"
+			}
 			post {
 				always {
 					cucumber jsonReportDirectory: "target/cucumber-reports", fileIncludePattern: "**/CucumberTestReport.json"
