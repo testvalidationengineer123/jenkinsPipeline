@@ -2,10 +2,10 @@ pipeline {
 	
 	agent any
 	
-	tools {
+/*	tools {
 		maven "${env.MAVEN_HOME}"
 		jdk "${env.JAVA_HOME}"
-	}	
+	}	*/
 	
 	stages {	
 	
