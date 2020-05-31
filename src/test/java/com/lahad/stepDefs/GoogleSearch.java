@@ -20,7 +20,6 @@ public class GoogleSearch {
 	@Given("user is on google search page")
 	public void user_is_on_google_search_page() {
 		driver.get("http://www.google.com");
-Assert.assertTrue(false);
 	}
 
 	@When("user types {string} and hit enter")
@@ -35,6 +34,7 @@ Assert.assertTrue(false);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Assert.assertTrue(driver.getPageSource().contains("Gouvernement du Sénégal"));
 		
+Assert.assertTrue(false);
 	}
 	
 	@Then("results for France must be displayed")
