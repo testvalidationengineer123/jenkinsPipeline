@@ -33,7 +33,9 @@ pipeline {
 					emailext body: '''Hi team,
 									The latest tests build is unsucessful.
 									There may be errors or failures.
-									Lahad.''', subject: 'Unsuccessful build ', to: 'testvalidationengineer123@gmail.com'
+									Lahad.''',
+							 subject: 'Unsuccessful build ',
+							 to: 'testvalidationengineer123@gmail.com'
 				
 				}
 			}
