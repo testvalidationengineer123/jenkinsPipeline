@@ -16,7 +16,7 @@ pipeline {
 	stages {	
 		stage("Build and Test") {	
 			steps {
-				bat "echo ********************This is the build stage********************"
+//				bat "echo ********************This is the build stage********************"
 				try {
 					bat "mvn clean install -DnavigateurUtilise=${params.NAVIGATEUR}"
 				}
