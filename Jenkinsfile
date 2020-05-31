@@ -11,20 +11,14 @@ pipeline {
 	
 	stages {	
 	
-		stage("Build") {	
+		stage("Build and Test") {	
 				
 			steps {
 				bat "echo This is the build stage//////////////////////////////////////////////////////////////"
-				bat "mvn clean install -DnavigateurUtilise=chrome"
+				bat "mvn clean install -DnavigateurUtilise=${params.navigateur}"
 			}
 		}
-		
-		stage("Test") {
-			
-			steps {
-				bat "echo This is the test stage//////////////////////////////////////////////////////////////"
-			}
-		}
+
 		
 		stage("Cucumber Reports") {
 			
