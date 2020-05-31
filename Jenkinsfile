@@ -23,16 +23,19 @@ pipeline {
 		stage("Build and Test") {	
 				
 			steps {
-				bat "echo This is the build stage//////////////////////////////////////////////////////////////"
+				bat "echo ********************This is the build stage********************"
 				bat "mvn clean install -DnavigateurUtilise=${params.NAVIGATEUR}"
 			}
 		}
 
 		
-		stage("Cucumber Reports") {
+		stage("Report") {
 			
 			steps {
-				bat "echo This is the report stage//////////////////////////////////////////////////////////////"
+				bat "echo ********************This is the report stage********************"
+				always {
+					cucumber jsonReportDirectory: "target/cucumber-reports", fileIncludePattern: "**/CucumberTestReport.json"
+				}
 			}
 		}				
 	
